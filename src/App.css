@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #f8fafc;
+  line-height: 1.7;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8%;
+  background: #111c33;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav h2 {
+  color: #38bdf8;
+  font-size: 28px;
+}
+
+nav a {
+  color: #f8fafc;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+section {
+  padding: 75px 10%;
+  min-height: 220px;
+}
+
+#home {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: linear-gradient(135deg, #0f172a, #172554);
+}
+
+#home p:first-child {
+  color: #38bdf8;
+  font-size: 20px;
+}
+
+#home h1 {
+  font-size: clamp(40px, 7vw, 68px);
+  color: #38bdf8;
+  margin: 8px 0;
+}
+
+#home h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+#home a {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 24px;
+  background: #0284c7;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+#home a:hover {
+  background: #0369a1;
+}
+
+section h2 {
+  color: #38bdf8;
+  margin-bottom: 18px;
+  font-size: 30px;
+}
+
+#skills p,
+#projects p,
+#blog p,
+#contact p {
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #111c33;
+  color: #cbd5e1;
+}
+
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  nav a {
+    margin-left: 0;
+  }
+
+  section {
+    padding: 50px 7%;
+  }
+
+  #home h2 {
+    font-size: 23px;
+  }
+}
